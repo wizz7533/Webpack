@@ -1,23 +1,31 @@
 {
-  "name": "poepariswebpack",
-  "version": "1.0.0",
-  "description": "Formation webpack POE front end Paris",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wizz7533/Webpack.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wizz7533/Webpack/issues"
-  },
-  "homepage": "https://github.com/wizz7533/Webpack#readme",
-  "devDependencies": {
-    "webpack": "^5.34.0",
-    "webpack-cli": "^4.6.0"
-  }
+    "name": "poepariswebpack",
+    "version": "1.0.0",
+    "description": "Formation webpack POE front end Paris",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "webpack --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wizz7533/Webpack.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wizz7533/Webpack/issues"
+    },
+    "homepage": "https://github.com/wizz7533/Webpack#readme",
+    "devDependencies": {
+        "clean-webpack-plugin": "*",
+        "copy-webpack-plugin": "^8.1.1",
+        "css-loader": "^5.2.4",
+        "html-webpack-plugin": "^5.3.1",
+        "sass": "^1.32.11",
+        "sass-loader": "^11.0.1",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.34.0",
+        "webpack-cli": "^4.6.0"
+    }
 }

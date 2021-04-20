@@ -1,0 +1,10 @@
+$body-bg-color: #000;
+$body-font-color: #fff;
+body {
+    background-color: $body-bg-color;
+    color: $body-font-color;
+}
+
+img {
+    max-width: 4rem;
+}
