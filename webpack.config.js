@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const copyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
     mode: 'development',
@@ -28,7 +28,7 @@ module.exports = {
     },
     // plugins
     plugins: [
-        new copyWebpackPlugin({
+        new CopyWebpackPlugin({
             patterns: [{
                 from: path.resolve(__dirname, './src/assets'),
                 to: path.resolve(__dirname, './dist/assets'),
@@ -42,5 +42,10 @@ module.exports = {
             }
         }),
         new CleanWebpackPlugin()
-    ]
+    ],
+    devServer: {
+        contentBase: path.resolve(__dirname, "./dist"),
+        hot: true, // active le Hot Module Reload (HMR)
+        port: 8020
+    }
 }
