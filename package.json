@@ -1,0 +1,22 @@
+{
+  "name": "poepariswebpack",
+  "version": "1.0.0",
+  "description": "Formation webpack POE front end Paris",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizz7533/Webpack.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wizz7533/Webpack/issues"
+  },
+  "homepage": "https://github.com/wizz7533/Webpack#readme",
+  "devDependencies": {
+    "webpack": "^5.34.0"
+  }
+}
